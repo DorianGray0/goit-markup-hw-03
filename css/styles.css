@@ -26,6 +26,28 @@ body {
   overflow: hidden;
 }
 
+/* ----------------------------УТІЛІТИ--- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding-left: 0;
+}
+
+image {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
@@ -39,7 +61,14 @@ body {
   color: var(--color-accent);
 }
 
-/* ----------------HEADER */
+.button:hover,
+.button:focus {
+  color: var(--first-background-color);
+  background-color: var(--color-accent);
+  cursor: pointer;
+}
+
+/* ----------------------------------HEADER */
 
 /* .header {
 } */
@@ -47,7 +76,7 @@ body {
 /* .navigation {
 } */
 
-/* -------------LOGO */
+/* -------------------------------LOGO */
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -94,7 +123,7 @@ body {
   color: var(--color-text);
 }
 
-/* ------------section 1 HERO */
+/* --------------------------------section 1 HERO */
 
 .hero {
   background-color: var(--color-headings);
@@ -122,7 +151,7 @@ body {
   background-color: #404bbf;
 }
 
-/*------------section 2 FUNCIOINAL */
+/*--------------------------------section 2 FUNCIOINAL */
 
 /* .functional {
 } */
@@ -146,7 +175,7 @@ body {
   color: var(--color-text);
 }
 
-/*  ---------section 3 PROPOSITION */
+/*  ----------------------section 3 PROPOSITION */
 
 /* .proposition {
 } */
@@ -166,7 +195,7 @@ body {
 .proposition-item {
 } */
 
-/*  ---------section 4 TEAM */
+/*  ---------------------------section 4 TEAM */
 
 .team {
   background-color: var(--second-background-color);
@@ -201,7 +230,7 @@ body {
   background-color: var(--first-background-color);
 }
 
-/*  ---------FOOTER */
+/*  -----------------------------------------------------FOOTER */
 
 .footer {
   background-color: var(--color-headings);
@@ -215,7 +244,7 @@ body {
   color: var(--color-fon-imagen);
 }
 
-/* -------PORTFOLIO */
+/* ---------------------------------------------------PORTFOLIO */
 
 /* .services-list {
 } */
@@ -231,13 +260,6 @@ body {
 
 /* .button {
 } */
-
-.button:hover,
-.button:focus {
-  color: var(--first-background-color);
-  background-color: var(--color-accent);
-  cursor: pointer;
-}
 
 /* .option-list {
 } */
