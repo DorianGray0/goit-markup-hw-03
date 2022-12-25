@@ -323,8 +323,10 @@ image {
   gap: 24px;
   justify-content: center;
   margin-bottom: 72px;
-  height: 48px;
 }
+
+/* .services-item {
+} */
 
 .services-button {
   font-family: 'Roboto', sans-serif;
