@@ -75,8 +75,6 @@ image {
 
 .container {
   width: 1158px;
-  padding-right: 15px;
-  padding-left: 15px;
   margin: 0 auto;
   outline: 1px solid tomato;
 }
@@ -296,7 +294,7 @@ image {
   padding-bottom: 100px;
 }
 
-.navigation {
+.footer .navigation {
   margin-bottom: 16px;
 }
 
