@@ -39,38 +39,24 @@ p {
 }
 
 ul,
-li {
+ol {
   margin: 0;
   padding-left: 0;
+  list-style: none;
 }
 
-image {
+img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.list {
-  list-style: none;
-}
-
-.link {
+a {
   text-decoration: none;
 }
 
-.link:focus,
-.link:hover {
-  color: var(--color-accent);
-}
-
-.button {
+button {
   cursor: pointer;
-}
-
-.button:hover,
-.button:focus {
-  color: var(--first-background-color);
-  background-color: var(--color-accent);
 }
 
 .container {
@@ -80,29 +66,62 @@ image {
   padding-left: 15px;
 }
 
+/* -------------------------studio*/
+
+.link:focus,
+.link:hover {
+  color: var(--color-accent);
+}
+
+/* ----(cards) h3/p  */
+
 .team-wrap {
   letter-spacing: 0.02em;
   background-color: var(--first-background-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* ----------------------portfolio */
+
+.button:hover,
+.button:focus {
+  color: var(--first-background-color);
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+/* -----(cards) h3/p */
+
+.option-wrap {
   padding: 32px 16px;
+  background-color: var(--first-background-color);
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 /* ----------------------------------HEADER */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
 }
 
 .header > .container {
   display: flex;
+  align-items: center;
 }
 
-.navigation {
+.header-navigation {
   display: flex;
 }
 
-/* -------------------------------LOGO */
+/* ---------------LOGO */
+
+.header-navigation > .logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -110,24 +129,21 @@ image {
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-
-.logo {
   color: var(--color-accent);
-  margin-right: 76px;
 }
 
-.logo > .header {
+.header-studio {
   color: var(--color-headings);
 }
 
-.logo > .footer {
+.footer-studio {
   color: var(--second-background-color);
 }
 
 .navigation-list {
   display: flex;
   gap: 40px;
+  margin-left: 76px;
 }
 
 /* .navigation-item {
@@ -138,6 +154,9 @@ image {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-headings);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
 }
 
 .contacts-list {
@@ -208,8 +227,9 @@ image {
   gap: 24px;
 }
 
-/* .functional-item {
-} */
+.functional-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
 
 .functional-title {
   font-size: 20px;
@@ -223,10 +243,9 @@ image {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-text);
-  width: 264px;
 }
 
-/*  ----------------------section 3 PROPOSITION */
+/*  ------------------------------section 3 PROPOSITION */
 
 .proposition {
   padding-bottom: 120px;
@@ -251,10 +270,12 @@ image {
   flex-basis: calc((100% - 48px) / 3);
 }
 
-/*  ---------------------------section 4 TEAM */
+/*  ---------------------------------section 4 TEAM */
 
 .team {
   background-color: var(--second-background-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-title {
@@ -264,14 +285,12 @@ image {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color-headings);
-  padding-top: 120px;
   margin-bottom: 72px;
 }
 
 .team-list {
   display: flex;
   gap: 24px;
-  padding-bottom: 120px;
 }
 
 .team-item {
@@ -300,7 +319,7 @@ image {
   padding-bottom: 100px;
 }
 
-.footer .navigation {
+.footer-navigation {
   margin-bottom: 16px;
 }
 
@@ -312,6 +331,8 @@ image {
 }
 
 /* ---------------------------------------------------PORTFOLIO */
+
+/*---- buttons */
 
 .services {
   padding-top: 96px;
@@ -341,14 +362,13 @@ image {
   border-radius: 4px;
 }
 
-/* .button {
-
-} */
+/* -------------OPTIONS (CARDS) */
 
 .option-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .option-item {
